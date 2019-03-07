@@ -67,6 +67,6 @@ def create_signal(project_id, title, content):
     parent = client.project_path(project_id)
 
     signal = client.create_signal(parent,
-        {'title': title, 'content': content})
+        {'title': title, 'content': content, 'content_type': 'text/plain'})
     return signal
 # [END monitoring_irm_create_signal]
